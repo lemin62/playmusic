@@ -47,7 +47,7 @@ let trackLoading = document.getElementById("trackLoading");
 let currentTrackTimeBar = document.getElementById("currentTrackTimeBar");
 
 let musics = [
-{
+  {
     trackName: "Losing Lemin",
     artist: "Villain of the story",
     album: "Divided",
@@ -103,15 +103,15 @@ let musics = [
     coverImage: "https://i.postimg.cc/hvyGBHCW/image.jpg",
     audioSource:
       "https://cdns-preview-0.dzcdn.net/stream/c-095471cd71c784daa9eab6beb69c5848-3.mp3"
-  }
-{
+  },
+  {
     trackName: "thecuong",
     artist: "china",
     album: "china",
     coverImage: "https://i.postimg.cc/y62Drhym/image.jpg",
     audioSource:
       "https://cdns-preview-d.dzcdn.net/stream/c-dbbdb0dd57e34c52b2379fb69bc7da4f-3.mp3"
-  },
+  }
 ];
 
 musics.forEach((item, index) => {
