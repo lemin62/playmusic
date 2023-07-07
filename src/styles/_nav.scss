@@ -1,0 +1,41 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(96, 96, 96);
+    border: 1px solid rgb(96, 96, 96);
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    @media (hover: hover) {
+      &:hover {
+        background-color: rgb(96, 96, 96);
+        color: white;
+      }
+    }
+  }
+
+  h1 {
+    color: rgb(96, 96, 96);
+  }
+}
+
+#darkMode nav {
+  button {
+    color: #81789b;
+    border: 1px solid #81789b;
+    @media (hover: hover) {
+      &:hover {
+        background-color: #8e8eb6;
+        color: #151516;
+      }
+    }
+  }
+}

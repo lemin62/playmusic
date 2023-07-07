@@ -1,0 +1,106 @@
+// import partials
+@import "./player";
+@import "./song";
+@import "./library";
+@import "./nav";
+
+// font
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(53, 53, 53);
+}
+
+#darkMode {
+  h1,
+  h2,
+  h3 {
+    color: #81789b;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h3,
+h4 {
+  font-weight: 400;
+  color: rgb(101, 101, 101);
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  transition: all 0.5s ease;
+}
+
+#darkMode {
+  background-color: #222026;
+  color: #81789b;
+  h1 {
+    color: #81789b;
+  }
+  h2 {
+    color: #81789b;
+  }
+  h3 {
+    color: #565168;
+  }
+}
+
+.library-active {
+  margin-left: 10%;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 30s linear infinite;
+  -moz-animation: rotating 30s linear infinite;
+  -ms-animation: rotating 30s linear infinite;
+  -o-animation: rotating 30s linear infinite;
+  animation: rotating 30s linear infinite;
+  animation-play-state: running;
+}
+
+.paused {
+  animation: rotating 30s linear infinite;
+  animation-play-state: paused;
+}
